@@ -32,10 +32,9 @@
 \begin{document}
 \frame{\maketitle}
 \begin{frame}{Definition}
-	The term \alert{\textit{super-radiance}} was introduced by Dicke to refer to the phenomenon of coherent, constructive interference of the radiation emitted by a gas.
-	The resulting intensity scales up quadratically in the number $N$ of sources.\newline\pause
+	\alert{\textit{Super-radiance}} refers to the situation where, due to coherent constructive interference of the light scattered by different atoms, the cavity light's intensity scales up quadratically with the number $N$ of scatterer atoms.\newline
 	~\newline
-	Here the same concept is adapted to the case of scattering by a linear chain of atoms, and complemented with the opposite case, \alert{\textit{sub-radiance}}, in which the scaling is sub-linear in $N$.
+	On the contrary, \alert{\textit{sub-radiance}} refers to a sub-linear scaling of the scattered light's intensity with $N$.
 \end{frame}
 
 \begin{frame}{Experimental setup}
@@ -109,11 +108,24 @@
 \end{frame}
 
 \begin{frame}{Magic detuning}
-	\begin{align*}
-		\text{At }\Delta_{ca}=-2\pi\times507\,\text{MHz}&\longrightarrow \eta^{Ray}_0(m_{F,i},F')=\eta^{Ray}_0(F')\\
-		&\longrightarrow \eta^{Ram}_i=0 \quad\forall i
-	\end{align*}
+	\begin{minipage}{\textwidth}
+		\hspace{3em}
+		\begin{minipage}{0.1\textwidth}
+			\begin{align*}
+				\text{At }\Delta_{ca}=-2\pi\times507\,\text{MHz}
+			\end{align*}
+		\end{minipage}
+		\hspace{-1em}
+		\begin{minipage}{0.49\textwidth}
+			\begin{align*}
+				&\longrightarrow \eta^{Ram}_i=0 \quad\forall i\\
+				&\longrightarrow \eta^{Ray}_0(m_{F,i},F')=\eta^{Ray}_0(F')
+				\end{align*}
+		\end{minipage}
+	\end{minipage}
+	\vfill
 	Also, the atom-induced modifications of the cavity resonance can be neglected for large $|\Delta_{ca}|$.
+	\vfill
 \end{frame}
 
 \begin{frame}{Two atoms {\tiny at $y$=0 and magic detuning}}
@@ -155,6 +167,18 @@
 			C = e^{-k^2\sigma^2}
 		\end{equation*}
 	\end{minipage}
+\end{frame}
+
+\begin{frame}{More atoms {\tiny at $y$=0 and magic detuning}}
+	\vspace{0.5em}
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[width=0.6\textwidth]{Figure_2b.png}
+	\end{minipage}
+	{\small\begin{align*}
+		\text{$\lambda$ spacing:}\quad \left(\frac{n_N}{N\;n_1}\right)_{max} &= \left(\frac{C-1}{C+1}\right)^2 + N\frac{4C}{(C+1)^2}\\
+		\text{$\lambda/2$ spacing:}\,\quad \left(\frac{n_N}{N\;n_1}\right)_{min} &= \left(\frac{C-1}{C+1}\right)^2 + \frac{1}{N}\frac{4C}{(C+1)^2}\frac{1-(-1)^N}{2}
+	\end{align*}}
 \end{frame}
 
 \end{document}
