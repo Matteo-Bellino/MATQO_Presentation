@@ -86,7 +86,7 @@
 \end{frame}
 
 \begin{frame}{Two-photons scattering}
-	The cavity photon number, distinguished on the scattering process (thus on polarization), is
+	In the dispersive coupling regime $|\Delta_{ca}|\gg\{\Omega_0,g_0,\gamma\}$, the cavity photon number, distinguished on the scattering process (thus on polarization), is
 	\begin{align*}
 		n^{Ray}_N &\propto |\sum_{i=1}^N \eta^{Ray}_i|^2\\
 		n^{Ram}_N &\propto \sum_{i=1}^N |\eta^{Ram}_i|^2
@@ -114,6 +114,47 @@
 		&\longrightarrow \eta^{Ram}_i=0 \quad\forall i
 	\end{align*}
 	Also, the atom-induced modifications of the cavity resonance can be neglected for large $|\Delta_{ca}|$.
+\end{frame}
+
+\begin{frame}{Two atoms {\tiny at $y$=0 and magic detuning}}
+	\begin{minipage}{\textwidth}
+		\begin{minipage}{0.3\textwidth}
+			\begin{equation*}
+				n^{Ray}_N \propto |\sum_{i=1}^N \eta^{Ray}_i|^2
+			\end{equation*}
+			\vspace{1em}
+			\begin{minipage}{\textwidth}
+				\textbf{Ideal case}
+				\vspace{-0.5em}
+				\begin{equation*}
+					\frac{n_2}{n_1} = \bigl(1+\cos(kd)\bigr)^2
+				\end{equation*}
+			\end{minipage}
+			\vspace{0.8em}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.6\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Figure_2a.png}
+		\end{minipage}
+	\end{minipage}\\
+	\vfill
+	\begin{minipage}{0.6\textwidth}		
+		\textbf{Finite position fluctuations $\sigma$}
+		\vspace{-0.5em}
+		\begin{equation*}
+			\frac{n_2}{n_1} = 1+\frac{C\cos(2kd)+1}{C+1}+8\frac{C\cos(kd)}{(C+1)^2}
+		\end{equation*}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		\vspace{1.4em}
+		Cavity signal's contrast
+		\vspace{-1em}
+		\begin{equation*}
+			C = e^{-k^2\sigma^2}
+		\end{equation*}
+	\end{minipage}
 \end{frame}
 
 \end{document}
